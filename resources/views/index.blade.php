@@ -89,8 +89,11 @@
 
 
                     <button class="btn btn-primary d-block my-2" id="slide-button">Slide</button>
-                    <div id="slide-text"><div class="table-responsive">
-                        <table class="table table-primary">
+                    <button class="btn btn-primary d-block my-2" id="clone-button">Clone</button>
+
+                    <div id="slide-text">
+                        <div class="table-responsive">
+                        <table class="table table-primary clone-table">
                             <thead>
                                 <tr>
                                     <th scope="col">Column 1</th>

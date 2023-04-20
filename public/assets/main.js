@@ -121,4 +121,9 @@ $( document ).ready(function() {
     $(document).on('click','#prepend-button', function(){
         $("#text").prepend("<b>Prepended text</b>. ");
     });
+
+    $(document).on('click','#clone-button', function(){
+        $(".clone-table").clone().appendTo('#slide-text');
+    });
+
 });
