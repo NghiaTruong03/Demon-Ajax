@@ -44,17 +44,81 @@
                                     <a class="btn btn-success update_user_form" data-id="{{$user->id}}"
                                         data-name="{{$user->name}}" data-age="{{$user->age}}" data-bs-toggle="modal"
                                         data-bs-target="#updateModal">Edit</a>
-                                    <a class="btn btn-danger delete_user" id="delete-btn-{{$user->id}}" data-id="{{$user->id}}">Delete</a>
+                                    <a class="btn btn-danger delete_user" id="delete-btn-{{$user->id}}"
+                                        data-id="{{$user->id}}">Delete</a>
                                 </td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
-                    {{-- {!! $users->links() !!} --}}
+                    <button class="btn btn-primary d-block my-2" id="return_top" href='#top'>Go to the top page</button>
+
+                    <button class="btn btn-primary d-block my-2" id="printPage" href="#">Print page</button>
+
+                    <div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Maximum 10 characters</label>
+                            <input class="col-md-2" type="text" name="" id="max_input" maxlength="10"
+                                class="form-control">
+                            <span id="rchars">10</span> characters remaining
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="create_div">Create a div</button>
+                    <button class="btn btn-primary" id="empty_div">Remove all inside a div</button>
+                    <button class="btn btn-primary" id="css_div">Change css</button>
+
+                    <h4>Div Area</h4>
+                    <div class="new_area">
+                    </div>
+
+
+
+                    <p id="toggle-text">Click to hide/show text</p>
+                    <button type="button" class="btn btn-primary my-2" id="toggle-button">Hide/Show text</button>
+
+                    <p>Age: <input type="text" id="value-test" value="26"></p>
+                    <button class="btn btn-primary" id="get-value-button">Get value</button>
+                    <button class="btn btn-primary" id="change-value-button">Change value</button>
+
+
+                    <p id="text">Append and Prepend</p>
+                    <button class="btn btn-primary" id="append-button">Append</button>
+                    <button class="btn btn-primary" id="prepend-button">Prepend</button>
+
+
+
+                    <button class="btn btn-primary d-block my-2" id="slide-button">Slide</button>
+                    <div id="slide-text"><div class="table-responsive">
+                        <table class="table table-primary">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Column 1</th>
+                                    <th scope="col">Column 2</th>
+                                    <th scope="col">Column 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td scope="row">R1C1</td>
+                                    <td>R1C2</td>
+                                    <td>R1C3</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
